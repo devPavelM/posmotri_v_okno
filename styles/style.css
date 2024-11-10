@@ -179,16 +179,11 @@ ol {
   border: none;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
-  color: rgb(255 255 255 / 0.7);
+  color: #fff;
 }
 
-.search-form__pseudo-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  inline-size: 19px;
-  block-size: 19px;
-  border: 1px solid #fff;
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
 }
 
 .button {
@@ -201,7 +196,7 @@ ol {
   font-weight: 700;
   line-height: 21.6px;
   cursor: pointer;
-  block-size: 34px;
+  min-block-size: 34px;
 }
 
 .search-form__submit-button {
@@ -266,13 +261,9 @@ ol {
 }
 
 .button:active,
-.content__list-item:active {
+.content__card-link:active {
   background: #545050;
   text-decoration: none;
-}
-
-.content__card-link:active {
-  background-color: #545050;
 }
 
 .visually-hidden {
